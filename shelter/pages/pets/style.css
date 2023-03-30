@@ -1,0 +1,307 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+Georgian:wght@400;700&display=swap");
+html {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 15px;
+  font-family: "Arial";
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  transition: all 0.5s ease-out;
+}
+
+.header__logo-link {
+  text-decoration: none;
+}
+.header__logo-link .header__title {
+  font-family: "Georgia";
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 35px;
+  letter-spacing: 0.06em;
+  color: #545454;
+}
+.header__logo-link .header__subtitle {
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: 0.1em;
+  color: #292929;
+  padding-left: 4px;
+  padding-top: 10px;
+}
+
+.header__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.header__nav .header__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 35px;
+  margin: 0;
+  padding: 0;
+}
+.header__nav .header__list .header__item {
+  list-style-type: none;
+}
+.header__nav .header__list .header__item .header__links {
+  text-decoration: none;
+  color: #545454;
+}
+.header__nav .header__list .header__item .header__links:hover {
+  color: #292929;
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+}
+.header__nav .header__list .header__item .header__links .links__first {
+  color: #292929;
+  padding-bottom: 3px;
+  border-bottom: 3px solid #F1CDB3;
+}
+
+.our {
+  background: #F6F6F6;
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+.our .our__title {
+  font-family: "Georgia";
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 45px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  letter-spacing: 0.06em;
+  color: #545454;
+  margin-top: 0;
+  margin-bottom: 45px;
+}
+
+.wrapper__dog {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-bottom: 60px;
+  row-gap: 30px;
+}
+.wrapper__dog .card {
+  background: #FAFAFA;
+  border-radius: 9px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper__dog .card .card__title {
+  font-family: "Georgia";
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.06em;
+  color: #545454;
+  text-align: center;
+  margin: 30px 0 30px;
+}
+.wrapper__dog .card .card__button {
+  width: 187px;
+  height: 52px;
+  font-family: "Georgia";
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 22px;
+  letter-spacing: 0.06em;
+  color: #292929;
+  border: 2px solid #F1CDB3;
+  border-radius: 100px;
+  background: none;
+  margin-bottom: 30px;
+}
+.wrapper__dog .card .card__button:hover {
+  background: #FDDCC4;
+  cursor: pointer;
+  transition: 0.5s all ease-in-out;
+}
+.wrapper__dog .card:hover {
+  cursor: pointer;
+  background-color: #FFFFFF;
+  transition: 0.5s all ease-in-out;
+}
+.wrapper__dog .card:hover .card__button {
+  background: #FDDCC4;
+  cursor: pointer;
+  transition: 0.5s all ease-in-out;
+}
+
+.arrows {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.arrows .two__arrow-left {
+  width: 48px;
+  height: 48px;
+  border: 2px solid #CDCDCD;
+  border-radius: 100px;
+}
+.arrows .two__arrow-left::after {
+  display: block;
+  content: "";
+  background-image: url(../../asetts/icon/two__arrow-left.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
+.arrows .one__arrow-left {
+  width: 48px;
+  height: 48px;
+  border: 2px solid #CDCDCD;
+  border-radius: 100px;
+}
+.arrows .one__arrow-left::after {
+  display: block;
+  content: "";
+  background-image: url(../../asetts/icon/one__arrow-left.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
+.arrows .arrows__number {
+  width: 52px;
+  height: 52px;
+  background: #F1CDB3;
+  border-radius: 100px;
+  text-align: center;
+}
+.arrows .arrows__number .numbers {
+  margin-top: 14px;
+}
+.arrows .one__arrow-right {
+  width: 48px;
+  height: 48px;
+  border: 2px solid #F1CDB3;
+  border-radius: 100px;
+}
+.arrows .one__arrow-right:hover {
+  background-color: #FDDCC4;
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+}
+.arrows .one__arrow-right::after {
+  display: block;
+  content: "";
+  background-image: url(../../asetts/icon/one_arrow-right.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
+.arrows .two__arrow-right {
+  width: 48px;
+  height: 48px;
+  border: 2px solid #F1CDB3;
+  border-radius: 100px;
+}
+.arrows .two__arrow-right:hover {
+  background-color: #FDDCC4;
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+}
+.arrows .two__arrow-right::after {
+  display: block;
+  content: "";
+  background-image: url(../../asetts/icon/two__arrow-right.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+.footer {
+  background: url(../../asetts/images/background__footer.png) no-repeat;
+  background-size: cover;
+  padding-top: 56px;
+}
+.footer .footer__description-one {
+  font-family: "Georgia";
+  letter-spacing: 0.06em;
+  font-size: 20px;
+  line-height: 23px;
+}
+.footer .footer__description-one .description__title {
+  max-width: 278px;
+  font-size: 35px;
+  line-height: 45px;
+  color: #FFFFFF;
+}
+.footer .footer__description-one .description__email {
+  color: #F1CDB3;
+  display: flex;
+  align-items: center;
+  margin: 40px 0 40px;
+}
+.footer .footer__description-one .description__email::before {
+  display: block;
+  content: "";
+  background-image: url(../../asetts/icon/icon-email.svg);
+  width: 40px;
+  height: 32px;
+  background-size: cover;
+  background-position: center;
+  margin-right: 20px;
+}
+.footer .footer__description-one .description__email .email__link {
+  color: #F1CDB3;
+  text-decoration: none;
+}
+.footer .footer__description-one .description__phone {
+  color: #F1CDB3;
+  display: flex;
+  align-items: center;
+}
+.footer .footer__description-one .description__phone::before {
+  display: block;
+  content: "";
+  background-image: url(../../asetts/icon/icon-phone.svg);
+  width: 40px;
+  height: 32px;
+  background-size: cover;
+  background-position: center;
+  margin-right: 20px;
+}
+.footer .footer__description-one .description__phone .phone__links {
+  color: #F1CDB3;
+  text-decoration: none;
+}
+.footer .footer__description-one .description__adres {
+  color: #F1CDB3;
+  max-width: 302px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.footer .footer__description-one .adres-one {
+  margin: 34px 0 32px;
+}
+.footer .footer__description-one .adress_link {
+  color: #F1CDB3;
+  text-decoration: none;
+}
+.footer .footer__wrapper {
+  display: flex;
+  gap: 160px;
+}/*# sourceMappingURL=style.css.map */

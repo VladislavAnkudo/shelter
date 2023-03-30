@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Georgian:wght@400;700&display=swap');
+html{
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+body{
+    font-size: 15px;
+    font-family: 'Arial';
+    font-weight: 400;
+    line-height: 24px;
+}
+.wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+    transition: all 0.5s ease-out;
+}
+.header__logo-link{
+    text-decoration: none;
+
+    .header__title {
+        font-family: 'Georgia';
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 35px;
+        letter-spacing: 0.06em;
+        color: #545454;
+    }
+    .header__subtitle {
+        font-size: 13px;
+        line-height: 15px;
+        letter-spacing: 0.1em;
+        color: #292929;
+        padding-left: 4px;
+        padding-top: 10px;
+    }
+}
+.header__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.header__nav {
+   
+    .header__list{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 35px;
+        margin: 0;
+        padding: 0;
+        .header__item {
+            list-style-type: none;
+            .header__links {
+                text-decoration: none;
+                color: #545454;
+                &:hover{
+                    color: #292929;
+                    cursor: pointer;
+                    transition: all 0.5s ease-out;
+                }
+                .links__first{
+                    color: #292929;
+                    padding-bottom: 3px;
+                    border-bottom: 3px solid #F1CDB3;
+                }
+            }
+        }
+    }
+}
+.our{
+    background: #F6F6F6;
+    padding-top: 80px;
+    padding-bottom: 100px;
+    .our__title{
+        font-family: 'Georgia';
+        font-weight: 400;
+        font-size: 35px;
+        line-height: 45px;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        letter-spacing: 0.06em;
+        color: #545454;
+        margin-top: 0;
+        margin-bottom: 45px;
+    }
+}
+.wrapper__dog{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-bottom: 60px;
+    row-gap: 30px;
+    .card {
+        background: #FAFAFA;
+        border-radius: 9px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .card__title {
+            font-family: 'Georgia';
+            font-size: 20px;
+            line-height: 23px;
+            letter-spacing: 0.06em;
+            color: #545454;
+            text-align: center;
+            margin: 30px 0 30px;
+        }
+        .card__button {
+            width: 187px;
+            height: 52px;
+            font-family: 'Georgia';
+            font-weight: 400;
+            font-size: 17px;
+            line-height: 22px;
+            letter-spacing: 0.06em;
+            color: #292929;
+            border: 2px solid #F1CDB3;
+            border-radius: 100px;
+            background: none;
+            margin-bottom: 30px;
+            &:hover{
+                background: #FDDCC4;
+                cursor: pointer;
+                transition: 0.5s all ease-in-out;
+            }
+        }
+        &:hover {
+            cursor: pointer;
+            background-color: #FFFFFF;
+            transition: 0.5s all ease-in-out;
+            .card__button{
+                background: #FDDCC4;
+                cursor: pointer;
+                transition: 0.5s all ease-in-out;
+            }
+        }
+    }
+}
+.arrows {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    .two__arrow-left {
+        width: 48px;
+        height: 48px;
+        border: 2px solid #CDCDCD;
+        border-radius: 100px;
+
+        &::after{
+            display: block;
+            content: "";
+            background-image: url(../../asetts/icon/two__arrow-left.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .one__arrow-left {
+        width: 48px;
+        height: 48px;
+        border: 2px solid #CDCDCD;
+        border-radius: 100px;
+
+        &::after{
+            display: block;
+            content: "";
+            background-image: url(../../asetts/icon/one__arrow-left.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .arrows__number {
+        width: 52px;
+        height: 52px;
+        background: #F1CDB3;
+        border-radius: 100px;
+        text-align: center;
+       
+        .numbers{
+            margin-top: 14px;
+        }
+    }
+    .one__arrow-right {
+        width: 48px;
+        height: 48px;
+        border: 2px solid #F1CDB3;
+        border-radius: 100px;
+        &:hover{
+            background-color: #FDDCC4;
+            cursor: pointer;
+            transition: all 0.5s ease-out;
+        }
+        &::after{
+            display: block;
+            content: "";
+            background-image: url(../../asetts/icon/one_arrow-right.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .two__arrow-right {
+        width: 48px;
+        height: 48px;
+        border: 2px solid #F1CDB3;
+        border-radius: 100px;
+        &:hover{
+            background-color: #FDDCC4;
+            cursor: pointer;
+            transition: all 0.5s ease-out;
+        }
+        &::after{
+            display: block;
+            content: "";
+            background-image: url(../../asetts/icon/two__arrow-right.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+.footer{
+    background: url(../../asetts/images/background__footer.png) no-repeat;
+    background-size: cover;
+    padding-top: 56px;
+    .footer__description-one {
+        font-family: 'Georgia';
+        letter-spacing: 0.06em;
+        font-size: 20px;
+        line-height: 23px;
+        .description__title {
+            max-width: 278px;
+            font-size: 35px;
+            line-height: 45px;
+            color: #FFFFFF;
+        }
+        .description__email {
+            color: #F1CDB3;
+            display: flex;
+            align-items: center;
+            margin: 40px 0 40px;
+            &::before{
+                display: block;
+                content: "";
+                background-image: url(../../asetts/icon/icon-email.svg);
+                width: 40px;
+                height: 32px;
+                background-size: cover;
+                background-position: center;
+                margin-right: 20px;
+            }
+            .email__link{
+                color: #F1CDB3;
+                text-decoration: none;
+            }
+        }
+        .description__phone {
+            color: #F1CDB3;
+            display: flex;
+            align-items: center;
+            &::before{
+                display: block;
+                content: "";
+                background-image: url(../../asetts/icon/icon-phone.svg);
+                width: 40px;
+                height: 32px;
+                background-size: cover;
+                background-position: center;
+                margin-right: 20px;
+            }
+            .phone__links{
+                color: #F1CDB3;
+                text-decoration: none;
+            }
+        }
+        .description__adres{
+            color: #F1CDB3;
+            max-width: 302px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .adres-one{
+            margin: 34px 0 32px;
+        }
+        .adress_link{
+            color: #F1CDB3;
+            text-decoration: none;
+        }
+    }
+    .footer__wrapper{
+        display: flex;
+        gap: 160px;
+    }
+}
