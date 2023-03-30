@@ -1,0 +1,441 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Georgian:wght@400;700&display=swap');
+html{
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+body{
+    font-size: 15px;
+    font-family: 'Arial';
+    font-weight: 400;
+    line-height: 24px;
+}
+.wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+    transition: all 0.5s ease-out;
+}
+.header__logo-link{
+    text-decoration: none;
+
+    .header__title {
+        font-family: 'Georgia';
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 35px;
+        letter-spacing: 0.06em;
+        color: #F1CDB3;
+    }
+    .header__subtitle {
+        font-size: 13px;
+        line-height: 15px;
+        letter-spacing: 0.1em;
+        color: #fff;
+        padding-left: 4px;
+        padding-top: 10px;
+    }
+}
+.header__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+}
+.header__nav {
+   
+    .header__list{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 35px;
+        margin: 0;
+        padding: 0;
+        .header__item {
+            list-style-type: none;
+            .header__links {
+                text-decoration: none;
+                color: #CDCDCD;
+                &:hover{
+                    transition: 0.5s all ease-in-out;
+                    color: #FAFAFA;
+                }
+                .links__first{
+                    color: #FAFAFA;
+                    padding-bottom: 3px;
+                    border-bottom: 3px solid #F1CDB3;
+                }
+            }
+        }
+    }
+}
+.wrapper__background{
+    background: url(../../asetts/images/background__main.png) no-repeat;
+    background-size: cover;
+}
+.not_only {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 90px;
+    .left__section{
+
+        .left__section-title{
+            font-family: 'Georgia';
+            font-size: 44px;
+            line-height: 57px;
+            max-width: 310px;
+            color: #FFFFFF;
+            font-weight: 400;
+            margin: 0;
+            margin-top: -82px;
+        }
+        .left__section-subtitle{
+            color: #CDCDCD;
+            max-width: 460px;
+            margin: 42px 0 42px;
+        }
+        .left-section-button{
+            width: 207px;
+            height: 52px;
+            font-family: 'Georgia';
+            font-weight: 400;
+            font-size: 17px;
+            line-height: 22px;
+            letter-spacing: 0.06em;
+            background: #F1CDB3;
+            border-radius: 100px;
+            border: 0;
+            &:hover{
+                background-color: #FDDCC4;
+                cursor: pointer;
+                transition: all 0.5s ease-out;
+            }
+
+            .left-section-button_link{
+                text-decoration: none;
+                color: #292929;
+            }
+        }
+    }
+    .right__section{
+        display: flex;
+    }
+}
+.about__wrapper {
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row-reverse;
+   align-items: center;
+   justify-content: center;
+   gap: 120px;
+   margin: 80px 0 100px;
+   /* .about__us{
+        background-size: cover;
+    } */
+    .about__title {
+        font-family: 'Georgia';
+        font-weight: 400;
+        font-size: 35px;
+        line-height: 45px;
+        letter-spacing: 0.06em;
+        color: #545454;
+        max-width: 370px;
+        margin: 0;
+    }
+    .about__subtitle {
+        color: #4C4C4C;
+        max-width: 430px;
+        margin: 25px 0 25px;
+    }
+    .about__description {
+        color: #4C4C4C;
+        max-width: 430px;
+    }
+}
+.our{
+    background: #F6F6F6;
+    padding-top: 80px;
+    padding-bottom: 100px;
+    .our__title{
+        font-family: 'Georgia';
+        font-weight: 400;
+        font-size: 35px;
+        line-height: 45px;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        letter-spacing: 0.06em;
+        color: #545454;
+        margin-top: 0;
+        margin-bottom: 60px;
+    }
+    .our__button{
+        display: block;
+        width: 261px;
+        height: 52px;
+        font-family: 'Georgia';
+        font-size: 17px;
+        line-height: 22px;
+        letter-spacing: 0.06em;
+        background: #F1CDB3;
+        border-radius: 100px;
+        border: none;
+        margin: 0 auto;
+        &:hover{
+            background: #FDDCC4;
+            cursor: pointer;
+            transition: 0.5s all ease-in-out;
+        }
+        .our__button-link{
+            color: #292929;
+            text-decoration: none;
+        }
+    }
+}
+.wrapper__dog{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-bottom: 60px;
+    .arrow__left{
+        width: 52px;
+        height: 52px;
+        border: 2px solid #F1CDB3;
+        border-radius: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        &:hover{
+            background: #FDDCC4;
+            cursor: pointer;
+            transition: 0.5s all ease-in-out;
+        }   
+    }
+    .card {
+        background: #FAFAFA;
+        border-radius: 9px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .card__title {
+            font-family: 'Georgia';
+            font-size: 20px;
+            line-height: 23px;
+            letter-spacing: 0.06em;
+            color: #545454;
+            text-align: center;
+            margin: 30px 0 30px;
+        }
+        .card__button {
+            width: 187px;
+            height: 52px;
+            font-family: 'Georgia';
+            font-weight: 400;
+            font-size: 17px;
+            line-height: 22px;
+            letter-spacing: 0.06em;
+            color: #292929;
+            border: 2px solid #F1CDB3;
+            border-radius: 100px;
+            background: none;
+            margin-bottom: 30px;
+            &:hover{
+                background: #FDDCC4;
+                cursor: pointer;
+                transition: 0.5s all ease-in-out;
+            }
+        }
+        &:hover {
+            cursor: pointer;
+            background-color: #FFFFFF;
+            transition: 0.5s all ease-in-out;
+            .card__button{
+                background: #FDDCC4;
+                cursor: pointer;
+                transition: 0.5s all ease-in-out;
+            }
+        }
+    }
+}
+.help__title{
+    max-width: 310px;
+    font-family: 'Georgia';
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 45px;
+    letter-spacing: 0.06em;
+    color: #545454;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 60px;
+}
+.benefits {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 120px;
+    row-gap: 55px;
+    margin-bottom: 100px;
+    .benefits__card {
+
+        .cards{
+            display: block;
+            margin: 0 auto;
+        }
+        .benifits__title {
+            font-family: 'Georgia';
+            font-size: 20px;
+            line-height: 23px;
+            letter-spacing: 0.06em;
+            color: #545454;
+            text-align: center;
+            margin-top: 30px;
+        }
+    } 
+}
+.donation{
+    background: #F6F6F6;
+    padding-top: 80px;
+    padding-bottom: 100px;
+}
+.dontation__wrapper{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.right__section-donat {
+    font-family: 'Georgia';
+    letter-spacing: 0.06em;
+    color: #545454;
+    .donation__title {
+        max-width: 300px;
+        font-size: 35px;
+        font-weight: 400;
+        margin: 0;
+        line-height: 45px;
+    }
+    .donation__subtitle {
+        font-size: 15px;
+        line-height: 17px;
+        margin: 20px 0 20px;
+    }
+    .donation__card-pay {
+        font-size: 20px;
+        line-height: 23px;
+        background: #F1CDB3;
+        border-radius: 9px;
+        height: 43px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        &:hover{
+            background: #FDDCC4;
+            cursor: pointer;
+            transition: 0.5s all ease-in-out;
+        }
+        &::before{
+            display: block;
+            content: "";
+            background-image: url(../../asetts/icon/credit-card.svg);
+            width: 30px;
+            height: 23px;
+            background-size: cover;
+            background-position: center;
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+        .pay__links{
+            text-decoration: none;
+            color: #545454;
+        }
+    }
+    .donation__description {
+        max-width: 380px;
+        font-family: 'Arial';
+        font-style: italic;
+        font-size: 12px;
+        line-height: 18px;
+        color: #B2B2B2;
+        letter-spacing: 0;
+    }
+}
+.footer{
+    background: url(../../asetts/images/background__footer.png) no-repeat;
+    background-size: cover;
+    padding-top: 56px;
+    .footer__description-one {
+        font-family: 'Georgia';
+        letter-spacing: 0.06em;
+        font-size: 20px;
+        line-height: 23px;
+        .description__title {
+            max-width: 278px;
+            font-size: 35px;
+            line-height: 45px;
+            color: #FFFFFF;
+        }
+        .description__email {
+            color: #F1CDB3;
+            display: flex;
+            align-items: center;
+            margin: 40px 0 40px;
+            &::before{
+                display: block;
+                content: "";
+                background-image: url(../../asetts/icon/icon-email.svg);
+                width: 40px;
+                height: 32px;
+                background-size: cover;
+                background-position: center;
+                margin-right: 20px;
+            }
+            .email__link{
+                color: #F1CDB3;
+                text-decoration: none;
+            }
+        }
+        .description__phone {
+            color: #F1CDB3;
+            display: flex;
+            align-items: center;
+            &::before{
+                display: block;
+                content: "";
+                background-image: url(../../asetts/icon/icon-phone.svg);
+                width: 40px;
+                height: 32px;
+                background-size: cover;
+                background-position: center;
+                margin-right: 20px;
+            }
+            .phone__links{
+                color: #F1CDB3;
+                text-decoration: none;
+            }
+        }
+        .description__adres{
+            color: #F1CDB3;
+            max-width: 302px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .adres-one{
+            margin: 34px 0 32px;
+        }
+        .adress_link{
+            color: #F1CDB3;
+            text-decoration: none;
+        }
+    }
+    .footer__wrapper{
+        display: flex;
+        gap: 160px;
+    }
+}
+
