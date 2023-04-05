@@ -67,6 +67,29 @@ body{
         }
     }
 }
+.header__burger{
+    display: none;
+    width: 30px;
+    height: 22px;
+    position: relative;
+}
+.burger__line{
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #F1CDB3;
+    position: absolute;
+    left: 0;
+}
+.burger__line_first{
+    top: 0%;
+}
+.burger__line_second{
+    top: 50%;
+}
+.burger__line_three{
+    top: 100%;
+}
 .wrapper__background{
     background: url(../../asetts/images/background__main.png) no-repeat;
     background-size: cover;
@@ -95,6 +118,9 @@ body{
             margin: 42px 0 42px;
         }
         .left-section-button{
+            display: flex;
+            align-items: center;
+            justify-content: center;
             width: 207px;
             height: 52px;
             font-family: 'Georgia';
@@ -170,7 +196,9 @@ body{
         margin-bottom: 60px;
     }
     .our__button{
-        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         width: 261px;
         height: 52px;
         font-family: 'Georgia';
@@ -199,8 +227,8 @@ body{
     align-items: center;
     padding-bottom: 60px;
     .arrow__left{
-        width: 52px;
-        height: 52px;
+        width: 48px;
+        height: 48px;
         border: 2px solid #F1CDB3;
         border-radius: 100px;
         display: flex;
@@ -438,4 +466,257 @@ body{
         gap: 160px;
     }
 }
+@media screen and (max-width: 1160px) and (min-width: 768px) {
+    .wrapper{
+        max-width: 708px;
+    }
+    .not_only {
+        flex-direction: column;
+        margin-top: 60px;
+        .left__section {
+            .left-section-button{
+                margin: 0 auto;
+            }
+            .left__section-title{
+               margin-top: 0;
+            }
+        }
+        .right__section{
+            margin-top: 100px;
 
+            .right__section-img{
+                max-width: 81.52%;
+                margin-left: auto;
+            }
+        }
+    }
+    .about__wrapper{
+        gap: 80px;
+    }
+    .wrapper__dog{
+        justify-content: flex-start;
+        .card:nth-child(4){
+            display: none;
+        }
+        .card:nth-child(2){
+            margin-right: 40px;
+            margin-left: 12px;
+        }
+        .card:nth-child(3){
+            margin-right: 12px;
+        }
+    }
+    .benefits{
+        column-gap: 60px;
+
+        .benefits__card{
+            width: 170px;
+        }
+    }
+    .dontation__wrapper{
+        flex-direction: column;
+        gap: 60px;
+    }
+    .footer{
+        padding-top: 30px;
+        .footer__wrapper{
+            flex-wrap: wrap;
+            gap: 0;
+            justify-content: space-around;
+            row-gap: 65px;
+        }
+    }
+}
+@media screen and (max-width: 767px) and (min-width: 320px) {
+    .wrapper{
+        max-width: 300px;
+    }
+    .header__wrapper{
+        max-width: 280px;
+        margin: 0 auto;
+    }
+    .header__nav{
+        display: none;
+    }
+    .header__burger{
+        display: block;
+    }
+    .not_only {
+        flex-direction: column;
+        margin-top: 60px;
+        .left__section {
+            .left-section-button{
+                margin: 0 auto;
+            }
+            .left__section-title{
+               margin-top: 0;
+               font-size: 25px;
+               line-height: 32px;
+               text-align: center;
+            }
+            .left__section-subtitle{
+                text-align: center;
+            }
+        }
+        .right__section{
+            margin-top: 105px;
+
+            .right__section-img{
+                max-width: 86.7%;;
+                margin-left: auto;
+            }
+        }
+    }
+    .about__wrapper{
+        gap: 42px;
+        margin: 42px 0 42px;
+        .about__title{
+            font-size: 25px;
+            line-height: 32px;
+            text-align: center;
+            max-width: 293.8px;
+        }
+        .about__subtitle{
+            margin: 0 auto;
+            margin-top: 25px;
+            margin-bottom: 22px;
+            text-align: justify;
+            max-width: 270px;
+        }
+        .about__description{
+            margin: 0 auto;
+            text-align: justify;
+            max-width: 270px;
+        }
+        .dog__about{
+            display: block;
+            max-width: 86.7%;
+            margin: 0 auto;
+        }
+    }
+    .our{
+        padding-top: 42px;
+        padding-bottom: 42px;
+        .our__title{
+            margin-bottom: 42px;
+            font-size: 25px;
+            line-height: 32px;
+        }
+    } 
+    .wrapper__dog{
+        justify-content: flex-start;
+        padding-bottom: 42px;
+        .card:nth-child(4), .card:nth-child(3){
+            display: none;
+        }
+        .card:nth-child(2){
+            margin-right: 40px;
+            margin-left: 12px;
+        }
+        .card:nth-child(3){
+            margin-right: 12px;
+        }
+        .arrow__left:nth-child(1){
+            order: 1;
+            margin-left: 58px;
+            margin-right: 80px;
+            margin-top: 20px;
+        }
+        .arrow__left:nth-child(5){
+            order: 2;
+            margin-top: 20px; 
+        }
+    }
+    .help__title{
+        margin-top: 42px;
+        margin-bottom: 42px;
+        font-size: 25px;
+        line-height: 32px;
+    }
+    .benefits{
+        max-width: 290px;
+        margin: 0 auto;
+        margin-bottom: 42px;
+        column-gap: 0;
+        row-gap: 30px;
+        justify-content: space-between;
+        .benefits__card{
+            width: 130px;
+            height: 87px;
+            .benifits__title{
+                font-size: 15px;
+                line-height: 17%;
+                margin-top: 20px;
+            }
+            .cards{
+                width: 38.47%;
+            }
+        }
+    }
+    .donation{
+        padding-top: 42px;
+        padding-bottom: 42px;
+    }
+    .right__section-donat{
+
+        .donation__title{
+            font-size: 25px;
+            line-height: 32px;
+            text-align: center;
+        }
+        .donation__subtitle{
+            letter-spacing: 0;
+            text-align: center;
+        }
+        .donation__card-pay{
+            max-width: 280px;
+            margin: 0 auto;
+            margin-bottom: 20px;
+            .pay__links {
+                font-size: 15px;
+                line-height: 17px;
+            }
+        } 
+        .donation__description{
+            text-align: justify;
+            max-width: 280px;
+            margin: 0 auto;
+        }
+    }
+    .dontation__wrapper{
+        flex-direction: column;
+        gap: 42px;
+    }
+    .donat__dog{
+        max-width: 86.67%;
+        margin: 0 auto;
+        display: block;
+    }
+    .footer{
+        padding-top: 30px;
+        .footer__wrapper{
+            flex-wrap: wrap;
+            gap: 0;
+            justify-content: space-around;
+            row-gap: 40px;
+
+            .footer__dog{
+                max-width: 86.9%;
+            }
+        }
+        .footer__description-one{
+            text-align: center;
+            .description__title{
+                font-size: 25px;
+                line-height: 32px;
+                margin: 0 auto;
+            }  
+            .description__email{
+                justify-content: center;
+            }
+            .description__phone{
+                justify-content: center;
+            }
+        } 
+    }
+}

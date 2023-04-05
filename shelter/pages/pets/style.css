@@ -71,6 +71,34 @@ body {
   border-bottom: 3px solid #F1CDB3;
 }
 
+.header__burger {
+  display: none;
+  width: 30px;
+  height: 22px;
+  position: relative;
+}
+
+.burger__line {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #000000;
+  position: absolute;
+  left: 0;
+}
+
+.burger__line_first {
+  top: 0%;
+}
+
+.burger__line_second {
+  top: 50%;
+}
+
+.burger__line_three {
+  top: 100%;
+}
+
 .our {
   background: #F6F6F6;
   padding-top: 80px;
@@ -304,4 +332,93 @@ body {
 .footer .footer__wrapper {
   display: flex;
   gap: 160px;
+}
+
+@media screen and (max-width: 1160px) and (min-width: 768px) {
+  .wrapper {
+    max-width: 708px;
+  }
+  .our {
+    padding-bottom: 76px;
+  }
+  .our .our__title {
+    margin-bottom: 30px;
+  }
+  .wrapper__dog {
+    justify-content: center;
+    -moz-column-gap: 40px;
+         column-gap: 40px;
+    padding-bottom: 40px;
+  }
+  .footer {
+    padding-top: 30px;
+  }
+  .footer .footer__wrapper {
+    flex-wrap: wrap;
+    gap: 0;
+    justify-content: space-around;
+    row-gap: 65px;
+  }
+}
+@media screen and (max-width: 767px) and (min-width: 320px) {
+  .wrapper {
+    max-width: 300px;
+  }
+  .header__wrapper {
+    max-width: 280px;
+    margin: 0 auto;
+  }
+  .header__nav {
+    display: none;
+  }
+  .header__burger {
+    display: block;
+  }
+  .our {
+    padding-top: 42px;
+    padding-bottom: 42px;
+  }
+  .our .our__title {
+    margin-bottom: 30px;
+    font-size: 25px;
+    line-height: 32px;
+  }
+  .wrapper__dog {
+    justify-content: center;
+    -moz-column-gap: 40px;
+         column-gap: 40px;
+    padding-bottom: 42px;
+  }
+  .wrapper__dog .card:nth-child(4), .wrapper__dog .card:nth-child(5), .wrapper__dog .card:nth-child(6), .wrapper__dog .card:nth-child(7), .wrapper__dog .card:nth-child(8) {
+    display: none;
+  }
+  .arrows {
+    gap: 10px;
+  }
+  .footer {
+    padding-top: 30px;
+  }
+  .footer .footer__wrapper {
+    flex-wrap: wrap;
+    gap: 0;
+    justify-content: space-around;
+    row-gap: 40px;
+  }
+  .footer .footer__wrapper .footer__dog {
+    max-width: 86.9%;
+  }
+  .footer .footer__description-one {
+    text-align: center;
+  }
+  .footer .footer__description-one .description__title {
+    font-size: 25px;
+    line-height: 32px;
+    margin: 0 auto;
+  }
+  .footer .footer__description-one .description__email {
+    justify-content: center;
+  }
+  .footer .footer__description-one .description__phone {
+    justify-content: center;
+  }
 }/*# sourceMappingURL=style.css.map */
